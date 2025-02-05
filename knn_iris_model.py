@@ -32,6 +32,6 @@ print(f"Accuracy: {accuracy * 100:.2f}%")
 
 print(classification_report(y_test, y_pred))
 
-cm = confusion_matrix(y_test, y_pred)  # Generate confusion matrix
-ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names).plot()  # Display confusion matrix
+cm = confusion_matrix(y_test, y_pred)
+ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names).plot() 
 plt.show()
